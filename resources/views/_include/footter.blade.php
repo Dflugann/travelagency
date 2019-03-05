@@ -62,9 +62,9 @@
                 <div class="col-md-12 text-center">
                     <p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart2" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Agency Travel US <i class="icon-heart2" aria-hidden="true"></i> by <a href="" target="_blank">Flavio Santos</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-                        <span class="block">Demo Images: <a href="" target="_blank">Unsplash</a> , <a href="" target="_blank">Pexels.com</a></span>
+                        <!--<span class="block">Demo Images: <a href="" target="_blank">Unsplash</a> , <a href="" target="_blank"></a></span>-->
                     </p>
                 </div>
             </div>

@@ -11,9 +11,9 @@
                 </div>
                 <div class="col-xs-10 text-right menu-1">
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="has-dropdown">
-                            <a href="tours.html">Tours</a>
+                        <li class="{{ $navSelect == 'home' ? 'active' : '' }}"><a href={{ route('site.home')  }}>Home</a></li>
+                        <li class="has-dropdown {{ $navSelect == 'tours' ? 'active' : '' }}">
+                            <a href="{{ route('site.tours') }}">Tours</a>
                             <ul class="dropdown">
                                 <li><a href="#">Destination</a></li>
                                 <li><a href="#">Cruises</a></li>
@@ -21,11 +21,11 @@
                                 <li><a href="#">Booking</a></li>
                             </ul>
                         </li>
-                        <li><a href="hotels.html">Hotels</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="{{ $navSelect == 'hotels' ? 'active' : '' }}"><a href="{{ route('site.hotels') }}">Hotels</a></li>
+                        <li class="{{ $navSelect == 'services' ? 'active' : '' }}"><a href="{{ route('services.index') }}">Services</a></li>
+                        <li class="{{ $navSelect == 'blog' ? 'active' : '' }}"><a href="{{ route('blog.index') }}">Blog</a></li>
+                        <li class="{{ $navSelect == 'about' ? 'active' : '' }}"><a href="{{ route('about.index') }}">About</a></li>
+                        <li class="{{ $navSelect == 'contact' ? 'active' : '' }}"><a href={{ route('site.contact')  }}>Contact</a></li>
                     </ul>
                 </div>
             </div>

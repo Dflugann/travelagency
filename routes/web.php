@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', ['as'=> 'site.index', 'uses' => 'Site\HomeController@index']);
-
-
+Route::get('/', ['as'=> 'site.home', 'uses' => 'Site\HomeController@index']);
+Route::get('/contact', ['as' => 'site.contact', 'uses' => 'Site\ContactController@index']);
+Route::get('/hotels', ['as' => 'site.hotels', 'uses' => 'Site\HotelsController@index']);
+Route::get('/tours', ['as' => 'site.tours', 'uses' => 'Site\ToursController@index']);
+Route::resource('services', 'Site\ServicesController');
+Route::resource('about', 'Site\AboutController');
+Route::resource('blog', 'Site\BlogController');

@@ -9,6 +9,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('site.index');
+        $navSelect = 'home';
+        return view('site.index')->with([
+            'navSelect' => $navSelect
+        ]);
     }
 }
