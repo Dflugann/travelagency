@@ -18,6 +18,7 @@ Route::get('/tours', ['as' => 'site.tours', 'uses' => 'Site\ToursController@inde
 Route::resource('services', 'Site\ServicesController');
 Route::resource('about', 'Site\AboutController');
 Route::resource('blog', 'Site\BlogController');
+Route::resource('admin', 'Admin\IndexController');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+/*Route::get('/home', 'HomeController@index')->name('home');*/
