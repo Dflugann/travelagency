@@ -26,6 +26,7 @@
                         <li class="{{ $navSelect == 'blog' ? 'active' : '' }}"><a href="{{ route('blog.index') }}">Blog</a></li>
                         <li class="{{ $navSelect == 'about' ? 'active' : '' }}"><a href="{{ route('about.index') }}">About</a></li>
                         <li class="{{ $navSelect == 'contact' ? 'active' : '' }}"><a href={{ route('site.contact')  }}>Contact</a></li>
+                        <li class="{{ $navSelect == 'contact' ? 'active' : '' }}"><a href={{ route('login')  }}>Login</a></li>
                     </ul>
                 </div>
             </div>

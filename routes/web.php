@@ -18,3 +18,6 @@ Route::get('/tours', ['as' => 'site.tours', 'uses' => 'Site\ToursController@inde
 Route::resource('services', 'Site\ServicesController');
 Route::resource('about', 'Site\AboutController');
 Route::resource('blog', 'Site\BlogController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
